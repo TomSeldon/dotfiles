@@ -2,8 +2,7 @@
 alias ls='ls -alGH'
 
 # Output git info as part of prompt
-export PS1="<\[\033[0;32m\]\h\[\033[0m\]:\[\033[0;37m\]\u\[\033[0m\]> \w \[\033[0;36m\]\$(vcprompt)\[\033[0m\]\n-> "
-
+export PS1="\033[07;40;40m\]\w \[\033[07;33m\] $(vcprompt) \[\033[0m\]\033[07;31m\] NODE_ENV: $NODE_ENV \[\033[0m\]\n-> "
 # Git alias'
 alias ga='git add -A .'
 alias gpff='git pull --ff-only'
