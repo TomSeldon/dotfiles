@@ -1,6 +1,9 @@
 # Set node environment if not already set
 export NODE_ENV="${NODE_ENV:-production}"
 
+# Add user bin to path
+export PATH=~/bin:$PATH
+
 # Output git info as part of prompt
 export PS1="\[\033[0;32m\]\w\[\033[0m\]\[\033[0m\] \[\033[0;36m\]\$(vcprompt)\[\033[0m\] \[\033[1;33m\]node:\$(node --version)\[\033[0m\] \[\033[1;31m\]node env:\$(echo \$NODE_ENV)\[\033[0m\] \n-> "
 
