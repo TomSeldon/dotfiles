@@ -2,7 +2,7 @@
 export NODE_ENV="${NODE_ENV:-production}"
 
 # Output git info as part of prompt
-export PS1="\[\033[0;32m\]\w\[\033[0m\]\[\033[0m\] \[\033[0;36m\]\$(vcprompt)\[\033[0m\] \[\033[1;33m\]node:\$(node --version)\[\033[0m\] \[\033[1;31m\]node env:\$(echo \$NODE_ENV)\[\033[0m\] \n->"
+export PS1="\[\033[0;32m\]\w\[\033[0m\]\[\033[0m\] \[\033[0;36m\]\$(vcprompt)\[\033[0m\] \[\033[1;33m\]node:\$(node --version)\[\033[0m\] \[\033[1;31m\]node env:\$(echo \$NODE_ENV)\[\033[0m\] \n-> "
 
 export NVM_DIR="/Users/tomseldon/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
