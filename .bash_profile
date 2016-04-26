@@ -9,6 +9,7 @@ export NVM_DIR="/Users/tomseldon/.nvm"
 
 # git alias'
 alias ga='git add -A .'
+alias gs='git status'
 alias gpff='git pull --ff-only'
 alias standup="git log --since '1 day ago' --no-merges --pretty=format':%C(yellow)%h %aN%n %B%n' --author TomSeldon"
 alias clean-merged="git branch -d $( git branch --merged | grep -v '^\*' | grep -v 'master' )"
